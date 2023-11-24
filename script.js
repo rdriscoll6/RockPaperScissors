@@ -29,7 +29,7 @@ function playRound(playerselection,computerselection){
   else if (results == 'Player'){
     return 'Player won this round'
   }
-  else{
+  else if (results == 'Computer'){
     return 'Computer won this round'
   }
 }
