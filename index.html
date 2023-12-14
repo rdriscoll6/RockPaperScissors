@@ -4,10 +4,108 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="script2.js"></script>
+  <title>RPS</title>
 </head>
 <body>
+  <div class="container">
+    <div class="ScoreBoard">
+      <h2 id="userScore">User Score: </h2> 
+      <h2 id="computerScore">Computer Score: </h2>
   
+    </div>
+  
+    <div class="buttons">
+      <button id="Rock">Rock</button>
+      <button id="Paper">Paper</button>
+      <button id="Scissors">Scissors</button>
+    </div>  
+
+    <div class="reset">
+      <button id="Reset">Reset</button>
+    </div>
+    
+  </div>
+  
+  <style>
+    
+    *{
+      background-color: rgb(89, 144, 168);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+    .ScoreBoard{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      margin-bottom: 50px;
+    }
+    #userScore{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    #computerScore{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+    }
+    button{
+      border-style: none;
+      background-color: rgb(215, 198, 84);
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border-radius: 3px;
+      align-items: center;
+      font-weight: bold;
+    }
+    button:hover{
+      cursor: pointer;
+      box-shadow: 5px 10px;
+    }
+    #Paper:hover{
+      transition: .15s;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      box-shadow: 1px 1px 5px rgb(43, 43, 43);
+
+    }
+    #Rock:hover{
+      transition: .15s;
+      background-color: rgb(164, 164, 164);
+      color: white;
+      box-shadow: 1px 1px 5px rgb(43, 43, 43);
+    }
+    #Scissors:hover{
+      transition: .15s;
+      background-color: rgb(65, 147, 68);
+      color: white;
+      box-shadow: 1px 1px 5px rgb(43, 43, 43);
+    }
+    .reset{
+      display: flex;
+      margin-top: 50px;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+    #Reset:hover{
+      transition: .15s;
+      background-color: rgb(200, 72, 72);
+      color: white;
+      box-shadow: 1px 1px 5px rgb(43, 43, 43);
+    }
+  </style>
+
+  
+
+  <script src="script.js"></script>
 </body>
 </html>
